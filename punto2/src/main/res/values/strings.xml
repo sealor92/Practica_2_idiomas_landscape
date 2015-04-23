@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Punto2</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="numero_1">Número 1:</string>
+    <string name="numero_2">Número 2:</string>
+    <string name="hint_numero1">Ingrese el primer número</string>
+    <string name="hint_numero2">Ingrese el segundo número</string>
+    <string name="boton">Calcular</string>
+    <string name="suma">Suma</string>
+    <string name="resta">Resta</string>
+    <string name="multiplicacion">Multiplicación</string>
+    <string name="division">División</string>
+    <string name="resultado">Resultado:</string>
+</resources>

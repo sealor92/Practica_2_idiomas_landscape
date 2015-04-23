@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Punto4</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="circulo">Circulo</string>
+    <string name="cuadrado">Cuadrado</string>
+    <string name="triangulo">Triangulo</string>
+    <string name="rectangulo">Rectangulo</string>
+    <string name="hint_lado">Ingrese el valor del lado</string>
+    <string name="hint_base">Ingrese el valor de la base</string>
+    <string name="hint_altura">Ingrese el valor de la altura</string>
+    <string name="hint_radio">Ingrese el valor del radio</string>
+</resources>
