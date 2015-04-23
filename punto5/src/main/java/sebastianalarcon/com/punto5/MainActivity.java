@@ -72,6 +72,7 @@ public class MainActivity extends ActionBarActivity {
         // Is the button now checked?
         boolean checked = ((RadioButton) view).isChecked();
 
+
         // Check which radio button was clicked
         switch(view.getId()) {
             case R.id.rmasculino:
