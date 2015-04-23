@@ -115,7 +115,6 @@ public class MainActivity extends ActionBarActivity {
         final EditText edit2=(EditText) findViewById(R.id.e2);
         Button boton = (Button) findViewById(R.id.boton);
 
-
         // Is the button now checked?
         boolean checked = ((RadioButton) view).isChecked();
         result.setText(" ");

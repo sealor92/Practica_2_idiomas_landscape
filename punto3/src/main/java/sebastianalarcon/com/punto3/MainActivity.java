@@ -24,6 +24,7 @@ public class MainActivity extends ActionBarActivity {
         final TextView nota_final=(TextView) findViewById(R.id.nota_final);
         Button boton = (Button) findViewById(R.id.boton);
 
+
         boton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -23,6 +23,7 @@ public class MainActivity extends ActionBarActivity {
         final TextView tResultado=(TextView) findViewById(R.id.tResultado);
         Button boton = (Button) findViewById(R.id.boton);
 
+
         boton.setOnClickListener(new View.OnClickListener()
                 {
                         public void onClick(View v)
