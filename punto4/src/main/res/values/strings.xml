@@ -11,4 +11,6 @@
     <string name="hint_base">Ingrese el valor de la base</string>
     <string name="hint_altura">Ingrese el valor de la altura</string>
     <string name="hint_radio">Ingrese el valor del radio</string>
+    <string name="calcular">Calcular</string>
+    <string name="resultado">Resultado</string>
 </resources>
