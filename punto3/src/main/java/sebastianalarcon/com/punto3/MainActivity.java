@@ -9,7 +9,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-//Hola
 public class MainActivity extends ActionBarActivity {
 
     @Override
