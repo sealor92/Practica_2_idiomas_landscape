@@ -1,5 +1,8 @@
 package sebastianalarcon.com.punto5;
 
+import android.app.DatePickerDialog;
+import android.app.Dialog;
+import android.app.DialogFragment;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -7,9 +10,12 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
+
+import java.util.Calendar;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -39,9 +45,9 @@ public class MainActivity extends ActionBarActivity {
             public void onClick(View v) {
                 String cadena="";
 
-                tName.setText(eNombre.getText());
-                tMail.setText(eCorreo.getText());
-                tTel.setText(eTelefono.getText());
+                tName.setText("Nombre:"+eNombre.getText());
+                tMail.setText("Correo:"+eCorreo.getText());
+                tTel.setText("Telefono:"+eTelefono.getText());
 
                 if(bandera==1)
                     tSexo.setText("Masculino");
@@ -67,6 +73,62 @@ public class MainActivity extends ActionBarActivity {
             }
         });
     }
+
+    public static class DatePickerFragment extends DialogFragment
+            implements DatePickerDialog.OnDateSetListener {
+
+        @Override
+        public Dialog onCreateDialog(Bundle savedInstanceState) {
+            // Use the current date as the default date in the picker
+
+            final Calendar c = Calendar.getInstance();
+            int year = c.get(Calendar.YEAR);
+            int month = c.get(Calendar.MONTH);
+            int day = c.get(Calendar.DAY_OF_MONTH);
+
+            // Create a new instance of DatePickerDialog and return it
+
+            return new DatePickerDialog(getActivity(), this, year, month, day);
+        }
+
+        public void onDateSet(DatePicker view, int year, int month, int day) {
+            // Do something with the date chosen by the user
+            final TextView tFecha = (TextView) getActivity().findViewById(R.id.tFecha);
+            //System.out.println(day);
+            String smonth = "";
+            final String syear = String.valueOf(year);
+            final String sday = String.valueOf(day);
+            if(month==0){smonth="Enero";}
+            if(month==1){smonth="Febrero";}
+            if(month==2){smonth="Marzo";}
+            if(month==3){smonth="Abril";}
+            if(month==4){smonth="Mayo";}
+            if(month==5){smonth="Junii";}
+            if(month==6){smonth="Julio";}
+            if(month==7){smonth="Agosto";}
+            if(month==8){smonth="Septiembre";}
+            if(month==9){smonth="Octubre";}
+            if(month==10){smonth="Noviembre";}
+            if(month==11){smonth="Diciembre";}
+            Button bFecha = (Button) getActivity().findViewById(R.id.bFecha);
+            final String finalSmonth = smonth;
+            // btnsubmit.setOnClickListener(new View.OnClickListener() {
+            //  @Override
+            //   public void onClick(View v) {
+            txfecha.setText(sday+" / "+ finalSmonth +" / "+syear);
+            // }
+            //});
+        }
+    }
+
+    public void showDatePickerDialog(View v) {
+        DialogFragment newFragment = new DatePickerFragment();
+        newFragment.show(getFragmentManager(),"datePicker");
+
+    }
+
+
+
 
     public void onRadioButtonClicked(View view) {
         // Is the button now checked?
