@@ -123,11 +123,18 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ciudad"
+            android:layout_weight="3"/>
         <Spinner
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:id="@+id/spinner">
         </Spinner>
     </LinearLayout>
 
@@ -178,12 +185,21 @@
                 android:id="@+id/check4"/>
             </LinearLayout>
         </LinearLayout>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bFecha"
+        android:text="Fecha de nacimiento"
+        android:onClick="showDatePickerDialog"
+        />
+
     <Button
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="@string/boton"
         android:layout_gravity="center"
-        android:textSize="20dp"
+        android:textSize="15dp"
         android:id="@+id/boton"
         />
 
@@ -191,7 +207,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/nombre"
-        android:textSize="20dp"
+        android:textSize="15dp"
         android:id="@+id/tNombre"
         />
 
@@ -199,7 +215,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/correo"
-        android:textSize="20dp"
+        android:textSize="15dp"
         android:id="@+id/tCorreo"
         />
 
@@ -207,7 +223,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/telefono"
-        android:textSize="20dp"
+        android:textSize="15dp"
         android:id="@+id/tTelefono"
         />
 
@@ -215,7 +231,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/sexo"
-        android:textSize="20dp"
+        android:textSize="15dp"
         android:id="@+id/tSexo"
         />
 
@@ -223,7 +239,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/ciudad"
-        android:textSize="20dp"
+        android:textSize="15dp"
         android:id="@+id/tCiudad"
         />
 
@@ -231,7 +247,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hobbies"
-        android:textSize="20dp"
+        android:textSize="15dp"
         android:id="@+id/tHobbies"
         />
 
@@ -239,7 +255,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/fecha"
-        android:textSize="20dp"
+        android:textSize="15dp"
         android:id="@+id/tFecha"
         />
 

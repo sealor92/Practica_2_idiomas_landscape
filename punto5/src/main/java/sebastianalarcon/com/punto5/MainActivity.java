@@ -8,11 +8,13 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 import java.util.Calendar;
@@ -33,27 +35,34 @@ public class MainActivity extends ActionBarActivity {
         final TextView tMail= (TextView) findViewById(R.id.tCorreo);
         final TextView tTel= (TextView) findViewById(R.id.tTelefono);
         final TextView tSexo= (TextView) findViewById(R.id.tSexo);
+        final TextView tCiudad=(TextView) findViewById(R.id.tCiudad);
         final TextView tHobbies=(TextView) findViewById(R.id.tHobbies);
         Button boton=(Button) findViewById(R.id.boton);
         final CheckBox check1=(CheckBox) findViewById(R.id.check1);
         final CheckBox check2=(CheckBox) findViewById(R.id.check2);
         final CheckBox check3=(CheckBox) findViewById(R.id.check3);
         final CheckBox check4=(CheckBox) findViewById(R.id.check4);
+        final Spinner spinner = (Spinner) findViewById(R.id.spinner);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,R.array.ciudades, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
 
         boton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String cadena="";
+                String cadena="Hobbies:";
 
                 tName.setText("Nombre:"+eNombre.getText());
                 tMail.setText("Correo:"+eCorreo.getText());
                 tTel.setText("Telefono:"+eTelefono.getText());
 
                 if(bandera==1)
-                    tSexo.setText("Masculino");
+                    tSexo.setText("Sexo:Masculino");
                 else
                     if(bandera==2)
-                        tSexo.setText("Femenino");
+                        tSexo.setText("Sexo:Femenino");
+
+                tCiudad.setText("Ciudad:"+spinner.getSelectedItem().toString());
 
                 if(check1.isChecked())
                     cadena=cadena+"-VideoJuegos-";
@@ -67,7 +76,7 @@ public class MainActivity extends ActionBarActivity {
                 if(check1.isChecked() || check2.isChecked() || check3.isChecked() || check4.isChecked())
                     tHobbies.setText(cadena);
                 else
-                    tHobbies.setText("No se ingresaron Hobbies");
+                    tHobbies.setText("Hobbies: No se ingresaron Hobbies");
 
 
             }
@@ -103,7 +112,7 @@ public class MainActivity extends ActionBarActivity {
             if(month==2){smonth="Marzo";}
             if(month==3){smonth="Abril";}
             if(month==4){smonth="Mayo";}
-            if(month==5){smonth="Junii";}
+            if(month==5){smonth="Junio";}
             if(month==6){smonth="Julio";}
             if(month==7){smonth="Agosto";}
             if(month==8){smonth="Septiembre";}
@@ -115,7 +124,7 @@ public class MainActivity extends ActionBarActivity {
             // btnsubmit.setOnClickListener(new View.OnClickListener() {
             //  @Override
             //   public void onClick(View v) {
-            txfecha.setText(sday+" / "+ finalSmonth +" / "+syear);
+            tFecha.setText("Fecha de Nacimiento:"+sday+" / "+ finalSmonth +" / "+syear);
             // }
             //});
         }

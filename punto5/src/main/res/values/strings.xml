@@ -19,4 +19,23 @@
     <string name="hobbies">Hobbies:</string>
     <string name="ciudad">Ciudad:</string>
     <string name="fecha">Fecha de Nacimiento:</string>
+
+    <string-array name="ciudades">
+        <item>Leticia</item>
+        <item>Medellín</item>
+        <item>Arauca</item>
+        <item>Barranquilla</item>
+        <item>Cartagena</item>
+        <item>Tunja</item>
+        <item>Manizales</item>
+        <item>Florencia</item>
+        <item>Yopal</item>
+        <item>Popayán</item>
+        <item>Valledupar</item>
+        <item>Quibdó</item>
+        <item>Montería</item>
+        <item>Bogotá</item>
+        <item>Puerto Inírida</item>
+        <item>San José del Guaviare</item>
+    </string-array>
 </resources>
