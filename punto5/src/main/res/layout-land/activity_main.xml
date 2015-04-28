@@ -210,7 +210,7 @@
         android:layout_height="50dp"
         android:layout_gravity="center"
         android:id="@+id/bFecha"
-        android:text="Fecha de nacimiento"
+        android:text="@string/fecha"
         android:textSize="10dp"
         android:onClick="showDatePickerDialog"
         android:layout_weight="1"

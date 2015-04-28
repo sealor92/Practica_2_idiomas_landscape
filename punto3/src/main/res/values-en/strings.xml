@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="quices">Quices:</string>
+    <string name="exposiciones">Presentations:</string>
+    <string name="practicas">Lab Practices:</string>
+    <string name="proyecto">Final Proyect:</string>
+    <string name="nota">Final Grade:</string>
+    <string name="calcular">Calculate</string>
+    <string name="hint_quices">Set the quices grade</string>
+    <string name="hint_exposiciones">Set the presentations grade</string>
+    <string name="hint_practicas">Set the practices grade</string>
+    <string name="hint_proyecto">Set the proyect grade</string>
+</resources>

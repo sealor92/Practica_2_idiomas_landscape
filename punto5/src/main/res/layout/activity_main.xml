@@ -190,7 +190,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/bFecha"
-        android:text="Fecha de nacimiento"
+        android:text="@string/fecha"
         android:onClick="showDatePickerDialog"
         />
 

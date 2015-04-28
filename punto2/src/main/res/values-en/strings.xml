@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Point2</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="numero_1">Number 1:</string>
+    <string name="numero_2">Number 2:</string>
+    <string name="hint_numero1">Set the first number</string>
+    <string name="hint_numero2">Set the second number</string>
+    <string name="boton">Calculate</string>
+    <string name="suma">Sum</string>
+    <string name="resta">Subtraction</string>
+    <string name="multiplicacion">Multiplication</string>
+    <string name="division">Division</string>
+    <string name="resultado">Result:</string>
+</resources>
