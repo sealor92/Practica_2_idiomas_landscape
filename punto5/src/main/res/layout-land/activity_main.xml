@@ -7,6 +7,12 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:layout_weight="1">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
         >
 
         <TextView
@@ -33,6 +39,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:layout_weight="1"
         >
 
         <TextView
@@ -59,6 +66,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:layout_weight="1"
         >
 
         <TextView
@@ -74,7 +82,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:hint="@string/hint_telefono"
-            android:textSize="20dp"
+            android:textSize="10dp"
             android:inputType="textPersonName"
             android:layout_weight="1"
             android:id="@+id/eTelefono"
@@ -118,15 +126,28 @@
                 />
         </RadioGroup>
     </LinearLayout>
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:orientation="horizontal"
         android:layout_weight="1">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ciudad"
+            android:layout_weight="3"/>
         <Spinner
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:id="@+id/spinner">
         </Spinner>
     </LinearLayout>
 
@@ -177,19 +198,35 @@
                 android:id="@+id/check4"/>
         </LinearLayout>
     </LinearLayout>
-    <Button
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:text="@string/boton"
-        android:layout_gravity="center"
-        android:textSize="20dp"
-        android:id="@+id/boton"
-        />
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="horizontal"
+        android:layout_weight="1">
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:id="@+id/bFecha"
+        android:text="Fecha de nacimiento"
+        android:textSize="10dp"
+        android:onClick="showDatePickerDialog"
+        android:layout_weight="1"
+        />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="@string/boton"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:textSize="10dp"
+        android:id="@+id/boton"
+        />
+    </LinearLayout>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -245,5 +282,5 @@
         android:textSize="10dp"
         android:id="@+id/tFecha"
         />
-    </LinearLayout>
+
 </LinearLayout>
