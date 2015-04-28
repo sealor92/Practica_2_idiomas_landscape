@@ -5,4 +5,14 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="textViewStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:background">@color/red</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+
+    <style name="radioButtonStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:background">@color/yellow</item>
+        <item name="android:textColor">@color/red</item>
+    </style>
+
 </resources>
