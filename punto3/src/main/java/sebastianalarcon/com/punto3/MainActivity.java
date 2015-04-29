@@ -111,8 +111,9 @@ public class MainActivity extends Activity {
                s.putExtra("pExp",10);
                s.putExtra("pPra",40);
                s.putExtra("pPro",30);
-               startActivity(s);
+               startActivityForResult(s,1234);
                return true;
+
            case R.id.aboutUs:
                Intent i = new Intent(this,AboutActivity.class);
                startActivity(i);
@@ -121,5 +122,21 @@ public class MainActivity extends Activity {
        }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    protected void onActivityResult(int requestCode, int resultCode, Intent data){
+        super.onActivityResult(requestCode,resultCode,data);
+
+        if(requestCode ==1234 && resultCode== RESULT_OK){
+            String quiz = data.getExtras().getString("prQuiz");
+            String expo = data.getExtras().getString("prExp");
+            String prac = data.getExtras().getString("prPra");
+            String proy = data.getExtras().getString("prPro");
+
+            Toast.makeText(this,"Quiz: "+ quiz +"Expo: "+ expo +"Practica: "+ prac +"Proyecto:"+ proy,Toast.LENGTH_SHORT).show();
+        }
+
+
+
     }
 }

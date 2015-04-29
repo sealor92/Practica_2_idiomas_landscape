@@ -1,9 +1,11 @@
 package sebastianalarcon.com.punto3;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -19,13 +21,26 @@ public class SettingsActivity extends ActionBarActivity {
         final EditText Expo = (EditText) findViewById(R.id.eExposiciones_settings);
         final EditText Pract = (EditText) findViewById(R.id.ePracticas_settings);
         final EditText Proy = (EditText) findViewById(R.id.eProyecto_settings);
-        final Button calcular =(Button) findViewById(R.id.boton_settings);
+        final Button enviar =(Button) findViewById(R.id.boton_settings);
 
         Bundle extras=getIntent().getExtras();
         Quiz.setText(String.valueOf(extras.getInt("pQuiz")));
         Expo.setText(String.valueOf(extras.getInt("pExp")));
         Pract.setText(String.valueOf(extras.getInt("pPra")));
         Proy.setText(String.valueOf(extras.getInt("pPro")));
+
+        enviar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i =new Intent();
+                i.putExtra("prQuiz",Quiz.getText().toString());
+                i.putExtra("prExpo",Expo.getText().toString());
+                i.putExtra("prPra",Pract.getText().toString());
+                i.putExtra("prPro",Proy.getText().toString());
+                setResult(RESULT_OK,i);
+                finish();
+            }
+        });
     }
 
 
