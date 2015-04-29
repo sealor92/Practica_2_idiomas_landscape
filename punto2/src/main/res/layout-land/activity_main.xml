@@ -15,6 +15,7 @@
             android:text="@string/numero_1"
             android:textSize="30dp"
             android:layout_weight="1.7"
+            style="@style/textViewStyle"
             />
 
         <EditText
@@ -39,6 +40,7 @@
             android:text="@string/numero_2"
             android:textSize="30dp"
             android:layout_weight="1.7"
+            style="@style/textViewStyle"
             />
 
         <EditText
@@ -68,6 +70,7 @@
                 android:text="@string/suma"
                 android:id="@+id/rsuma"
                 android:onClick="onRadioButtonClicked"
+                style="@style/radioButtonStyle"
                 />
 
             <RadioButton
@@ -76,6 +79,7 @@
                 android:text="@string/resta"
                 android:id="@+id/rresta"
                 android:onClick="onRadioButtonClicked"
+                style="@style/radioButtonStyle"
                 />
 
             <RadioButton
@@ -84,6 +88,7 @@
                 android:text="@string/multiplicacion"
                 android:id="@+id/rmultiplicacion"
                 android:onClick="onRadioButtonClicked"
+                style="@style/radioButtonStyle"
                 />
 
             <RadioButton
@@ -92,6 +97,7 @@
                 android:text="@string/division"
                 android:id="@+id/rdivision"
                 android:onClick="onRadioButtonClicked"
+                style="@style/radioButtonStyle"
                 />
         </RadioGroup>
     </LinearLayout>

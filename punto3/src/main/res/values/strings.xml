@@ -13,4 +13,6 @@
     <string name="hint_exposiciones">Ingrese la nota de exposiciones</string>
     <string name="hint_practicas">Ingrese la nota de las practicas</string>
     <string name="hint_proyecto">Ingrese la nota del proyecto</string>
+    <string name="title_activity_about">About us</string>
+    <string name="title_activity_settings">SettingsActivity</string>
 </resources>

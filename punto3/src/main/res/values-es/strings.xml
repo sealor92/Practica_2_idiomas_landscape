@@ -12,4 +12,6 @@
     <string name="hint_exposiciones">Ingrese la nota de exposiciones</string>
     <string name="hint_practicas">Ingrese la nota de las practicas</string>
     <string name="hint_proyecto">Ingrese la nota del proyecto</string>
+    <string name="tAbout">Aplicación para calcular la nota final de una materia-Desarrollado por Sebastian Alarcon Ortega </string>
+    <string name="title_activity_about">About us</string>
 </resources>

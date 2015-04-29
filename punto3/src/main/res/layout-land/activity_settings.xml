@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -22,7 +21,7 @@
             android:layout_weight="1"
             android:hint="@string/hint_quices"
             android:textSize="20dp"
-            android:id="@+id/eQuices"/>
+            android:id="@+id/eQuices_settings"/>
     </LinearLayout>
 
     <LinearLayout
@@ -44,7 +43,7 @@
             android:layout_weight="1"
             android:hint="@string/hint_exposiciones"
             android:textSize="20dp"
-            android:id="@+id/eExposiciones"/>
+            android:id="@+id/eExposiciones_settings"/>
     </LinearLayout>
 
     <LinearLayout
@@ -65,7 +64,7 @@
             android:layout_weight="1"
             android:hint="@string/hint_practicas"
             android:textSize="20dp"
-            android:id="@+id/ePracticas"/>
+            android:id="@+id/ePracticas_settings"/>
     </LinearLayout>
 
     <LinearLayout
@@ -86,7 +85,7 @@
             android:layout_weight="1"
             android:hint="@string/hint_proyecto"
             android:textSize="20dp"
-            android:id="@+id/eProyecto"/>
+            android:id="@+id/eProyecto_settings"/>
     </LinearLayout>
 
     <Button
@@ -96,26 +95,8 @@
         android:layout_weight="1"
         android:layout_gravity="center"
         android:textSize="20dp"
-        android:id="@+id/boton"/>
+        android:id="@+id/boton_settings"/>
 
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_weight="1"
-        >
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/nota"
-            android:textSize="20dp"/>
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textSize="20dp"
-            android:id="@+id/nota_final"/>
-    </LinearLayout>
+
 
 </LinearLayout>

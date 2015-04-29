@@ -2,7 +2,7 @@
 <resources>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="quices">Quices:</string>
+    <string name="quices">Quizes:</string>
     <string name="exposiciones">Presentations:</string>
     <string name="practicas">Lab Practices:</string>
     <string name="proyecto">Final Proyect:</string>
@@ -12,4 +12,6 @@
     <string name="hint_exposiciones">Set the presentations grade</string>
     <string name="hint_practicas">Set the practices grade</string>
     <string name="hint_proyecto">Set the proyect grade</string>
+    <string name="tAbout">Aplication for calculate the final matter grade-Development by Sebastian Alarcon Ortega </string>
+    <string name="title_activity_about">About us</string>
 </resources>
