@@ -15,6 +15,7 @@
             android:text="¿De que figura desea calcular el area?"
             android:layout_weight="1"
             android:textSize="20dp"
+            style="@style/textViewStyler"
             />
         <RadioGroup
             android:layout_width="fill_parent"
@@ -26,26 +27,30 @@
                 android:layout_height="wrap_content"
                 android:text="@string/circulo"
                 android:id="@+id/rcirculo"
-                android:onClick="onRadioButtonClicked"/>
+                android:onClick="onRadioButtonClicked"
+                style="@style/textViewStyle"/>
             <RadioButton
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/cuadrado"
                 android:id="@+id/rcuadrado"
                 android:onClick="onRadioButtonClicked"
+                style="@style/textViewStyle"
                 />
             <RadioButton
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/triangulo"
                 android:id="@+id/rtriangulo"
-                android:onClick="onRadioButtonClicked"/>
+                android:onClick="onRadioButtonClicked"
+                style="@style/textViewStyle"/>
             <RadioButton
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/rectangulo"
                 android:id="@+id/rrectangulo"
-                android:onClick="onRadioButtonClicked"/>
+                android:onClick="onRadioButtonClicked"
+                style="@style/textViewStyle"/>
         </RadioGroup>
     </LinearLayout>
 
@@ -105,7 +110,8 @@
             android:layout_height="wrap_content"
             android:text="@string/resultado"
             android:layout_weight="1"
-            android:textSize="20dp"/>
+            android:textSize="20dp"
+            style="@style/textViewStyleb"/>
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"

@@ -14,4 +14,5 @@
     <string name="hint_radio">Ingrese el valor del radio</string>
     <string name="calcular">Calcular</string>
     <string name="resultado">Resultado</string>
+    <string name="pregunta">¿De que figura desea calcular el area?</string>
 </resources>

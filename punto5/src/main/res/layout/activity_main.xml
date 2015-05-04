@@ -107,6 +107,7 @@
                 android:textSize="20dp"
                 android:id="@+id/rmasculino"
                 android:onClick="onRadioButtonClicked"
+                style="@style/textViewStyle"
                 />
             <RadioButton
                 android:layout_width="fill_parent"
@@ -116,6 +117,7 @@
                 android:textSize="20dp"
                 android:id="@+id/rfemenino"
                 android:onClick="onRadioButtonClicked"
+                style="@style/textViewStyle"
                 />
             </RadioGroup>
         </LinearLayout>
@@ -158,13 +160,15 @@
                 android:layout_height="wrap_content"
                 android:text="@string/c1"
                 android:textSize="10dp"
-                android:id="@+id/check1"/>
+                android:id="@+id/check1"
+                style="@style/textViewStyleg"/>
             <CheckBox
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/c2"
                 android:textSize="10dp"
-                android:id="@+id/check2"/>
+                android:id="@+id/check2"
+                style="@style/textViewStyleg"/>
             </LinearLayout>
         <LinearLayout
             android:layout_width="fill_parent"
@@ -176,13 +180,15 @@
                 android:layout_height="wrap_content"
                 android:text="@string/c3"
                 android:textSize="10dp"
-                android:id="@+id/check3"/>
+                android:id="@+id/check3"
+                style="@style/textViewStyleg"/>
             <CheckBox
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/c4"
                 android:textSize="10dp"
-                android:id="@+id/check4"/>
+                android:id="@+id/check4"
+                style="@style/textViewStyleg"/>
             </LinearLayout>
         </LinearLayout>
 

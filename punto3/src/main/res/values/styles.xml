@@ -5,5 +5,14 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="textViewStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/red</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+
+    <style name="textViewStyleb" parent="@android:style/TextAppearance.Medium">
+        <item name="android:background">@color/red</item>
+        <item name="android:typeface">monospace</item>
+    </style>
 
 </resources>

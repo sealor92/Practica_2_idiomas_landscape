@@ -15,7 +15,8 @@
             android:layout_height="wrap_content"
             android:text="@string/quices"
             android:layout_weight="1"
-            android:textSize="20dp"/>
+            android:textSize="20dp"
+            style="@style/textViewStyle"/>
         <EditText
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -37,6 +38,7 @@
             android:layout_weight="1"
             android:text="@string/exposiciones"
             android:textSize="20dp"
+            style="@style/textViewStyle"
             />
         <EditText
             android:layout_width="fill_parent"
@@ -58,7 +60,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/practicas"
-            android:textSize="20dp"/>
+            android:textSize="20dp"
+            style="@style/textViewStyle"/>
         <EditText
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -79,7 +82,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/proyecto"
-            android:textSize="20dp"/>
+            android:textSize="20dp"
+            style="@style/textViewStyle"/>
         <EditText
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -109,7 +113,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/nota"
-            android:textSize="20dp"/>
+            android:textSize="20dp"
+            style="@style/textViewStyleb"/>
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
